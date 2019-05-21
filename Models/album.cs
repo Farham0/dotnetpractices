@@ -9,5 +9,8 @@ namespace WebApplication4.Models
     public class album:dbobj
     {
         public string name { get; set; }
+        
+        [Timestamp()]
+        public bytep[] rowVersion  {get;set;}
     }
 }
